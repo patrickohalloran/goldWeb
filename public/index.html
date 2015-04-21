@@ -1,0 +1,31 @@
+<html id="ng-app" data-ng-app="cle" data-ng-cloak>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/" />
+
+        <title data-ng-bind="pageTitle"></title>
+        <!-- <link rel="icon" type="image/png" href="./img/logo/favicon.ico"> -->
+
+        <style>
+            @font-face { font-family: BIG_JOHN; src: url("fonts/BIG_JOHN.otf"); }
+            @font-face { font-family: Slim_Joe; src: url("fonts/Slim_Joe.otf"); }
+        </style>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
+        <!-- LIBRARIES -->
+        <script src="./libs/js/angular.min.js"></script>
+        <script src="./libs/js/angular-touch.min.js"></script>
+        <script src="./libs/js/angular-ui-router.min.js"></script>
+
+        <!-- ANGULAR APP -->
+        <script src="./js/app.min.js"></script>
+    </head>
+
+    <body>
+        <!-- CONTENT -->
+        <div class="content" ui-view></div>
+    </body>
+</html>
