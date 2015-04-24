@@ -1,6 +1,6 @@
-var app = angular.module('cle', [
+var app = angular.module('goldWeb', [
         'ui.router',
-        'ngTouch'
+        'ngTouch',
     ]);
 
 app.run(['$rootScope',
@@ -51,6 +51,13 @@ app.config(['$stateProvider',
                 templateUrl: './views/home.html',
                 data: {
                     pageTitle: 'Innovative Design'
+                }
+            })
+            .state('person', {
+                url: '/:name',
+                templateUrl: './views/port.html',
+                date: {
+                    pageTitle: 'Something'
                 }
             })
             .state('about', {

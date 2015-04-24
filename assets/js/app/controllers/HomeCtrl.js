@@ -1,46 +1,41 @@
 app.controller('HomeCtrl', ['$scope', function($scope) {
     // Add functionality for home page here
 
-    $scope.images = [
+    $scope.people = [
         {
-            url: 'https://api.fnkr.net/testimg/350x200/00CED1/FFF/',
-            author: 'First Last'
+            name: 'Angela Choi',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'angela_choi'
         },
         {
-            url: 'https://api.fnkr.net/testimg/350x200/eeeeee/FFF/',
-            author: 'First Last'
+            name: 'Josephine Ung',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'josephine_ung'
         },
         {
-            url: 'https://api.fnkr.net/testimg/350x200/00ff00/FFF/',
-            author: 'First Last'
+            name: 'Tiffany Kim',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'tiffany_kim'
         },
         {
-            url: 'https://api.fnkr.net/testimg/350x200/00fff0/FFF/',
-            author: 'First Last'
+            name: 'Yi Jean Lim',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'yi_jean_lim'
         },
         {
-            url: 'https://api.fnkr.net/testimg/350x200/34fea1/FFF/',
-            author: 'First Last'
+            name: 'Felicia Fang',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'felicia_fang'
         },
         {
-            url: 'https://api.fnkr.net/testimg/350x200/00CED1/FFF/',
-            author: 'First Last'
+            name: 'Nathan Jin',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'nathan_jin'
         },
         {
-            url: 'https://api.fnkr.net/testimg/350x200/00CED1/FFF/',
-            author: 'First Last'
-        },
-        {
-            url: 'https://api.fnkr.net/testimg/350x200/00CED1/FFF/',
-            author: 'First Last'
-        },
-        {
-            url: 'https://api.fnkr.net/testimg/350x200/00CED1/FFF/',
-            author: 'First Last'
-        },
-        {
-            url: 'https://api.fnkr.net/testimg/350x200/00CED1/FFF/',
-            author: 'First Last'
+            name: 'Facundo Severi',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'facundo_severi'
         }
     ];
 

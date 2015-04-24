@@ -20,9 +20,18 @@
             <div class="bounce arrow2"><img src="../img/down_arrow.png"></div>
         </div>
 	</div>
-    <div class="people-container">
+    <div class="people-container" ng-controller="HomeCtrl">
         <div class="people-title">Meet Gold Tier</div>
+        <div class="people">
+            <div class="person" ng-repeat="member in people track by $index">
+                <div class="picture">
+                    <img src="{{ member.picture }}" alt="">
+                </div>
+                <div class="name">{{ member.name }}</div>
+            </div>
+        </div>
     </div>
+    <!-- <div ui-sref="person({ name: 'jason' })"></div> -->
 <!--     <div class="piece" ng-repeat="image in images track by $index">
         <div class="picture" ng-class="{ large: $index == currentImg }" data-ng-click="enlarge($index)">
             <img src="{{image.url}}" alt="">

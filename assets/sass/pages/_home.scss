@@ -1,4 +1,5 @@
 // Styles for Home Page
+
 $dark-grey : #6C7A87;
 $gold : #F6CA1B;
 $blue : #0092BF;
@@ -106,6 +107,8 @@ $Slim-Joe : Slim_Joe;
     }
 
     .people-container {
+        //@include column(1, 1, 1);// put parameters in here) //also put an @include clearfix becuase otherwise will add to height?
+        @include cf();
         position: absolute;
         height: 100%;
         width: 100%;
@@ -117,9 +120,12 @@ $Slim-Joe : Slim_Joe;
             font-size: 64px;
             line-height: 128px;
             text-align: center;
-            // font-family: $BIG_JOHN;
-            // color: red;
-            // @include txt-title-x-lg();
+        }
+
+        .people {
+            // width: 100%;
+            // @include horizontal-align();
+            @include column(1/2, 0, 2);
         }
     }
 }
