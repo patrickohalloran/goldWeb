@@ -24,7 +24,7 @@
         <div class="people-title">Meet Gold Tier</div>
         <div class="people">
             <div class="person" ng-repeat="member in people track by $index">
-                <div class="picture">
+                <div class="picture" ui-sref="{{member.link}}">
                     <img src="{{ member.picture }}" alt="">
                 </div>
                 <div class="name">{{ member.name }}</div>

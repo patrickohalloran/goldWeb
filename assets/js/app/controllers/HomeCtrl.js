@@ -5,37 +5,37 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
         {
             name: 'Angela Choi',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'angela_choi'
+            link: 'angela'
         },
         {
             name: 'Josephine Ung',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'josephine_ung'
+            link: 'josephine'
         },
         {
             name: 'Tiffany Kim',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'tiffany_kim'
+            link: 'tiffany'
         },
         {
             name: 'Yi Jean Lim',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'yi_jean_lim'
+            link: 'yi'
         },
         {
             name: 'Felicia Fang',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'felicia_fang'
+            link: 'felicia'
         },
         {
             name: 'Nathan Jin',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'nathan_jin'
+            link: 'nathan'
         },
         {
             name: 'Facundo Severi',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'facundo_severi'
+            link: 'facundo'
         }
     ];
 

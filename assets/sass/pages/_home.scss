@@ -125,13 +125,14 @@ $Slim-Joe : Slim_Joe;
     }
 
     .people {
+        @include horizontal-align();
         @include cf(); // Include floats in the flow of dom elements
-        width: 100%; // Or whatever you want the width of the entire grid to be
+        width: 80%; // Or whatever you want the width of the entire grid to be
 
         .person {
             // Have each person/picture be half the with of the people container
             // There will be 2 per row
-            @include col(1/2, 0, 2);
+            @include col(1/3, 0, 3);
 
             .picture {
                 width: 100%;

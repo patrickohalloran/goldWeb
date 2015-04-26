@@ -53,32 +53,60 @@ app.config(['$stateProvider',
                     pageTitle: 'Innovative Design'
                 }
             })
-            .state('person', {
-                url: '/:name',
-                templateUrl: './views/port.html',
-                date: {
-                    pageTitle: 'Something'
+            .state('angela', {
+                url: '/angela',
+                templateUrl: './views/portfoliopage.html',
+                data: {
+                    pageTitle: 'Angela Choi',
+                    name: 'Angela Choi'
                 }
             })
-            .state('about', {
-                url: '/about',
-                templateUrl: './views/about.html',
+            .state('josephine', {
+                url: '/josephine',
+                templateUrl: './views/portfoliopage.html',
                 data: {
-                    pageTitle: 'InnoD - About'
+                    pageTitle: 'Josephine Ung',
+                    name: 'Josephine Ung'
                 }
             })
-            .state('projects', {
-                url: '/projects',
-                templateUrl: './views/projects.html',
+            .state('tiffany', {
+                url: '/tiffany',
+                templateUrl: './views/portfoliopage.html',
                 data: {
-                    pageTitle: 'InnoD - Projects'
+                    pageTitle: 'Tiffany Kim',
+                    name: 'Tiffany Kim'
                 }
             })
-            .state('contact', {
-                url: '/contact',
-                templateUrl: './views/contact.html',
+            .state('yi', {
+                url: '/yi',
+                templateUrl: './views/portfoliopage.html',
                 data: {
-                    pageTitle: 'InnoD - Contact'
+                    pageTitle: 'Yi Jean Lim',
+                    name: 'Yi Jean Lim'
+                }
+            })
+            .state('felicia', {
+                url: '/felicia',
+                templateUrl: './views/portfoliopage.html',
+                data: {
+                    pageTitle: 'Felicia Fang',
+                    name: 'Felicia Fang'
+                }
+            })
+            .state('facundo', {
+                url: '/facundo',
+                templateUrl: './views/portfoliopage.html',
+                data: {
+                    pageTitle: 'Facundo Severi',
+                    name: 'Facundo Severi'
+                }
+            })
+            .state('nathan', {
+                url: '/nathan',
+                templateUrl: './views/portfoliopage.html',
+                data: {
+                    pageTitle: 'Nathan Jin',
+                    name: 'Nathan Jin'
                 }
             });
     }
