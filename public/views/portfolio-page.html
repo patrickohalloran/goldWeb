@@ -1,0 +1,22 @@
+<div class="portfolio-page" ng-controller="PortfolioCtrl">
+	<div class="nav">
+		<div class="logo" ui-sref="home"><img src="../img/innoD_logo.png"></div>
+		<div class="title">{{person.name}}</div>
+	</div>
+	<div class="info-container">
+		<div class="headshot">
+			<img src="https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/" alt="">
+		</div>
+		<div class="blurb">I like doing cool things!</div>
+	</div>
+	<ul rn-carousel rn-carousel-transition="hexagon" rn-carousel-buffered rn-carousel-auto-slide rn-carousel-pause-on-hover class="piece-container">
+		<li class="piece" ng-repeat="img in person.imgs track by $index"><img src="{{img}}" alt=""></li>
+	</ul>
+	<div rn-carousel-indicators ng-if="person.imgs.length > 1" slides="person.imgs"></div>
+<!-- 	<div class="piece-container">
+		<div class="piece" ng-repeat="img in person.imgs track by $index">
+			<img src="{{img}}" alt="">
+		</div>
+	</div> -->
+
+</div>
