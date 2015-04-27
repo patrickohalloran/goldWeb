@@ -13,6 +13,8 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
 		]
 	};

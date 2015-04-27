@@ -1,6 +1,7 @@
 var app = angular.module('goldWeb', [
         'ui.router',
         'ngTouch',
+        'angular-carousel'
     ]);
 
 app.run(['$rootScope',
