@@ -25,9 +25,9 @@
         <div class="people">
             <div class="person" ng-repeat="member in people track by $index">
                 <div class="picture" ui-sref="{{member.link}}">
-                    <img src="{{ member.picture }}" alt="">
+                    <img src="{{member.picture}}" alt="">
                 </div>
-                <div class="name">{{ member.name }}</div>
+                <div class="name">{{member.name}}</div>
             </div>
         </div>
     </div>

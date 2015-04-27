@@ -36,14 +36,17 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
             name: 'Facundo Severi',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
             link: 'facundo'
+        },
+        {
+            name: 'Charisse Celestial',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'charisse'
+        },
+        {
+            name: 'Jason Mai',
+            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            link: 'jason'
         }
     ];
 
-    $scope.enlarge = function(index) {
-        if (index === $scope.currentImg) {
-            $scope.currentImg = null;
-        } else {
-            $scope.currentImg = index;
-        }
-    };
 }]);

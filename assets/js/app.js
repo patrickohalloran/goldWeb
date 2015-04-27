@@ -9,11 +9,16 @@ app.run(['$rootScope',
     '$window',
     function ($rootScope, $state, $location, $window) {
         $rootScope.$state = $state;
+        var toHome = false;
 
         // Check if page requires login
         $rootScope.$on('$stateChangeStart',
             function (event, toState, toParams, fromState, fromParams) {
-                // Add functionality before state/page changes here
+                //console.log(toState);
+                // if (toState.name === "home") {
+                //     //console.log("YAAAAY");
+                //     toHome = true;
+                // }
             }
         );
 
@@ -31,8 +36,12 @@ app.run(['$rootScope',
             // Add functionality for successful state/page change here
         });
 
-        // Scroll to top of page on page change
-        $rootScope.$on('$viewContentLoaded', function() {
+        //Scroll to top of page on page change
+        $rootScope.$on('$viewContentLoaded', function(toState) {
+            // if (!toHome) {
+            //     document.body.scrollTop = document.documentElement.scrollTop = 0;
+            // }
+
             document.body.scrollTop = document.documentElement.scrollTop = 0;
         });
     }
@@ -55,7 +64,7 @@ app.config(['$stateProvider',
             })
             .state('angela', {
                 url: '/angela',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Angela Choi',
                     name: 'Angela Choi'
@@ -63,7 +72,7 @@ app.config(['$stateProvider',
             })
             .state('josephine', {
                 url: '/josephine',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Josephine Ung',
                     name: 'Josephine Ung'
@@ -71,7 +80,7 @@ app.config(['$stateProvider',
             })
             .state('tiffany', {
                 url: '/tiffany',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Tiffany Kim',
                     name: 'Tiffany Kim'
@@ -79,7 +88,7 @@ app.config(['$stateProvider',
             })
             .state('yi', {
                 url: '/yi',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Yi Jean Lim',
                     name: 'Yi Jean Lim'
@@ -87,7 +96,7 @@ app.config(['$stateProvider',
             })
             .state('felicia', {
                 url: '/felicia',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Felicia Fang',
                     name: 'Felicia Fang'
@@ -95,7 +104,7 @@ app.config(['$stateProvider',
             })
             .state('facundo', {
                 url: '/facundo',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Facundo Severi',
                     name: 'Facundo Severi'
@@ -103,7 +112,7 @@ app.config(['$stateProvider',
             })
             .state('nathan', {
                 url: '/nathan',
-                templateUrl: './views/portfoliopage.html',
+                templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Nathan Jin',
                     name: 'Nathan Jin'
