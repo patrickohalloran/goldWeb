@@ -29,12 +29,20 @@ app.run(['$rootScope',
             $rootScope.currentPage = toState.name;
 
             if (toState.data && toState.data.pageTitle) {
+                console.log("yoooo");
                 $rootScope.pageTitle = toState.data.pageTitle;
+                document.body.style.backgroundColor = toState.data.color;
             } else {
                 $rootScope.pageTitle = 'Innovative Design';
             }
 
             // Add functionality for successful state/page change here
+            // if (toState.name === 'home') {
+            //     console.log("yoooo");
+            //     document.body.style.backgroundColor = #EAEAEA;
+            // } else {
+            //     document.body.style.backgroundColor = #F6CA1B;
+            // }
         });
 
         //Scroll to top of page on page change
@@ -60,7 +68,8 @@ app.config(['$stateProvider',
                 url: '/',
                 templateUrl: './views/home.html',
                 data: {
-                    pageTitle: 'Innovative Design'
+                    pageTitle: 'Innovative Design',
+                    color: '#EAEAEA'
                 }
             })
             .state('angela', {
@@ -68,7 +77,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Angela Choi',
-                    name: 'Angela Choi'
+                    name: 'Angela Choi',
+                    color: '#F6CA1B'
                 }
             })
             .state('josephine', {
@@ -76,7 +86,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Josephine Ung',
-                    name: 'Josephine Ung'
+                    name: 'Josephine Ung',
+                    color: '#F6CA1B'
                 }
             })
             .state('tiffany', {
@@ -84,7 +95,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Tiffany Kim',
-                    name: 'Tiffany Kim'
+                    name: 'Tiffany Kim',
+                    color: '#F6CA1B'
                 }
             })
             .state('yi', {
@@ -92,7 +104,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Yi Jean Lim',
-                    name: 'Yi Jean Lim'
+                    name: 'Yi Jean Lim',
+                    color: '#F6CA1B'
                 }
             })
             .state('felicia', {
@@ -100,7 +113,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Felicia Fang',
-                    name: 'Felicia Fang'
+                    name: 'Felicia Fang',
+                    color: '#F6CA1B'
                 }
             })
             .state('facundo', {
@@ -108,7 +122,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Facundo Severi',
-                    name: 'Facundo Severi'
+                    name: 'Facundo Severi',
+                    color: '#F6CA1B'
                 }
             })
             .state('nathan', {
@@ -116,7 +131,8 @@ app.config(['$stateProvider',
                 templateUrl: './views/portfolio-page.html',
                 data: {
                     pageTitle: 'Nathan Jin',
-                    name: 'Nathan Jin'
+                    name: 'Nathan Jin',
+                    color: '#F6CA1B'
                 }
             });
     }

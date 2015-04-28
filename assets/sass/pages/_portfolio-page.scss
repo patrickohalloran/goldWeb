@@ -3,13 +3,15 @@ $dark-grey : #6C7A87;
 $gold : #F6CA1B;
 $blue : #0092BF;
 $white : #EAEAEA;
+$black: #000;
 $BIG_JOHN : BIG_JOHN;
 $Slim-Joe : Slim_Joe;
 
 .portfolio-page {
 	width: 100%;
-	height: 100%;
+	//height: 100%;
     background: $gold;
+    display: inline-block;
 
     .nav {
     	width: 100%;
@@ -59,6 +61,23 @@ $Slim-Joe : Slim_Joe;
         width: 350px;
         height: 200px;
         @include horizontal-align();
+    }
+
+    .indicators {
+        // width: 600px;
+        // height: 100px;
+        @include horizontal-align();
+        display: inline-block;
+        margin-bottom: 40px;
+
+        span {
+            color: $blue;
+
+        }
+
+        .active {
+            color: $black;
+        }
     }
 
     // .piece-container {

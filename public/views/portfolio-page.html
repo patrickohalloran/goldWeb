@@ -9,14 +9,17 @@
 		</div>
 		<div class="blurb">I like doing cool things!</div>
 	</div>
-	<ul rn-carousel rn-carousel-transition="hexagon" rn-carousel-buffered rn-carousel-auto-slide rn-carousel-pause-on-hover class="piece-container">
+	<ul rn-carousel rn-carousel-transition="hexagon" rn-carousel-buffered rn-carousel-auto-slide rn-carousel-pause-on-hover rn-carousel-index="carouselIndex" class="piece-container">
 		<li class="piece" ng-repeat="img in person.imgs track by $index"><img src="{{img}}" alt=""></li>
 	</ul>
-	<div rn-carousel-indicators ng-if="person.imgs.length > 1" slides="person.imgs"></div>
-<!-- 	<div class="piece-container">
+	<div rn-carousel-index="carouselIndex" class="indicators">
+		<span ng-repeat="img in person.imgs track by $index" ng-class="{active: $index==carouselIndex}" ng-click="goToSlide($index)">●</span>
+	</div>
+<!-- 	<div rn-carousel-indicators ng-if="person.imgs.length > 1" slides="person.imgs" rn-carousel-index="carouselIndex" class="indicator"></div> -->
+ <!-- 	<div class="piece-container">
 		<div class="piece" ng-repeat="img in person.imgs track by $index">
 			<img src="{{img}}" alt="">
 		</div>
-	</div> -->
+	</div>
 
 </div>
