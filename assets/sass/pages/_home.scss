@@ -30,10 +30,20 @@ $Slim-Joe : Slim_Joe;
         height: 100%;
 
 
-        .logo img {
-            width: 100px;
-            margin-top: 20px;
-            margin-left: 20px;
+        .logo {
+            transition: 1s;
+            img {
+                width: 100px;
+                margin-top: 20px;
+                margin-left: 20px;
+                //transition: 1s;
+                //opacity: 1;
+            }
+
+            &:hover {
+                transition: 21;
+                opacity: 0.5;
+            }
         }
 
         .catch-phrase-container {

@@ -36,10 +36,10 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			'./img/tiffany/img0.jpg',
+			'./img/tiffany/img1.jpg',
+			'./img/tiffany/img2.jpg',
+			'./img/tiffany/img3.jpg'
 		]
 	};
 
@@ -117,4 +117,8 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 			console.log("That dude doesn't exist!");
 			break;
 	}
+
+	$scope.goToSlide = function(index) {
+		$scope.carouselIndex = index;
+	};
 }]);

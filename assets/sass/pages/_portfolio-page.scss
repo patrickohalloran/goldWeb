@@ -20,13 +20,20 @@ $Slim-Joe : Slim_Joe;
         -webkit-box-shadow: 0 0 4px 1px $white;
 
     	.logo {
+            z-index: 900;
 			float: left;
 			margin-top: 20px;
 	       	margin-left: 20px;
+            transition: 1s;
 
     		img {
 				width: 100px;
 	    	}
+
+            &:hover {
+                transition: 1s;
+                opacity: 0.5;
+            }
 	    }
 
     	.title {
@@ -61,6 +68,11 @@ $Slim-Joe : Slim_Joe;
         width: 350px;
         height: 200px;
         @include horizontal-align();
+        text-align: center;
+        .piece img {
+            width: auto;
+            height: 100%;
+        }
     }
 
     .indicators {
