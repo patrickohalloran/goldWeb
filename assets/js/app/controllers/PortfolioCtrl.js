@@ -12,11 +12,11 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		imgs: [
 			{
 				url: './img/angela/img0.jpg',
-				wide: false
+				wide: true
 			},
 			{
 				url: './img/angela/img1.jpg',
-				wide: false
+				wide: true
 			}
 		]
 	};
@@ -63,19 +63,19 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 
 	$scope.yi = {
 		name: 'Yi Jean Lim',
-		blurb: 'I am Jason Mai. I do stuff',
+		blurb: "Hello! I'm Yi Jean, a junior who is majoring in Business Administration.
+				I was born and raised in Malaysia. I joined gold tier this semester and
+				have taken two innod design decals in the past. I have a love for animal
+				conservation, desserts and documentaries, combine the three and I'll be
+				a very happy person!",
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
 			{
-				url: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+				url: './img/yi/img0.png',
 				wide: false
 			},
 			{
-				url: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-				wide: false
-			},
-			{
-				url: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+				url: './img/yi/img1.png',
 				wide: false
 			}
 		]
@@ -88,11 +88,11 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		imgs: [
 			{
 				url: './img/felicia/img0.jpg',
-				wide: false
+				wide: true
 			},
 			{
 				url: './img/felicia/img1.jpg',
-				wide: false
+				wide: true
 			}
 		]
 	};
