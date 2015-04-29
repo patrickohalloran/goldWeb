@@ -74,6 +74,12 @@ $Slim-Joe : Slim_Joe;
         .piece img {
             width: auto;
             height: 100%;
+            @include vertical-align();
+        }
+
+        .wide img{
+            width: 100%;
+            height: auto;
         }
     }
 

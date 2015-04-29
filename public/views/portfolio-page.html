@@ -14,7 +14,7 @@
 
 
 	<ul rn-carousel rn-carousel-transition="hexagon" rn-carousel-auto-slide="2" rn-carousel-pause-on-hover rn-carousel-index="carouselIndex" rn-carousel-easing="easeInOutSine" rn-carousel-duration="1000" class="piece-container">
-		<li class="piece" ng-repeat="img in person.imgs track by $index"><img src="{{img}}" alt=""></li>
+		<li class="piece" ng-repeat="img in person.imgs track by $index" ng-class="{wide: img.wide===true}"><img src="{{img.url}}"></li>
 	</ul>
 
 

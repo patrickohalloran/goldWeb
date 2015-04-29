@@ -10,8 +10,14 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'./img/angela/img0.jpg',
-			'./img/angela/img1.jpg'
+			{
+				url: './img/angela/img0.jpg',
+				wide: false
+			},
+			{
+				url: './img/angela/img1.jpg',
+				wide: false
+			}
 		]
 	};
 
@@ -24,8 +30,14 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 				coffee shops, and shop for succulents.",
 		headshot: './img/josephine/headshot.jpg',
 		imgs: [
-			'./img/josephine/img0.png',
-			'./img/josephine/img1.png'
+			{
+				url: './img/josephine/img0.png',
+				wide: false
+			},
+			{
+				url: './img/josephine/img1.png',
+				wide: false
+			}
 		]
 	};
 
@@ -34,9 +46,18 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Tiffany. Drawing on illustrator. Creations are made.',
 		headshot: './img/tiffany/headshot.jpg',
 		imgs: [
-			'./img/tiffany/img0.png',
-			'./img/tiffany/img1.png',
-			'./img/tiffany/img2.png'
+			{
+				url: './img/tiffany/img0.png',
+				wide: false
+			},
+			{
+				url: './img/tiffany/img1.png',
+				wide: false
+			},
+			{
+				url: './img/tiffany/img2.png',
+				wide: false
+			}
 		]
 	};
 
@@ -45,10 +66,18 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			{
+				url: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+				wide: false
+			},
+			{
+				url: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+				wide: false
+			},
+			{
+				url: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+				wide: false
+			}
 		]
 	};
 
@@ -57,20 +86,36 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'./img/felicia/img0.jpg',
-			'./img/felicia/img1.jpg'
+			{
+				url: './img/felicia/img0.jpg',
+				wide: false
+			},
+			{
+				url: './img/felicia/img1.jpg',
+				wide: false
+			}
 		]
 	};
 
 	$scope.nathan = {
 		name: 'Nathan Jin',
-		blurb: 'I am Jason Mai. I do stuff',
+		blurb: 'Grown in the Midwest, transplanted to the Bay. My design
+				background comes from self-taught calligraphy with a focus
+				on gothic scripts, and a smattering of handlettering.',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			{
+				url: './img/nathan/img0.png',
+				wide: true
+			},
+			{
+				url: './img/nathan/img1.png',
+				wide: true
+			},
+			{
+				url: './img/nathan/img2.png',
+				wide: true
+			}
 		]
 	};
 
@@ -79,8 +124,14 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'./img/facundo/img0.jpg',
-			'./img/facundo/img1.jpg'
+			{
+				url: './img/facundo/img0.jpg',
+				wide: false
+			},
+			{
+				url: './img/facundo/img1.jpg',
+				wide: false
+			}
 		]
 	};
 
