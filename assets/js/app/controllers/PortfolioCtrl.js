@@ -10,36 +10,33 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			'./img/angela/img0.jpg',
+			'./img/angela/img1.jpg'
 		]
 	};
 
 	$scope.josephine = {
 		name: 'Josephine Ung',
-		blurb: 'I am Jason Mai. I do stuff',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		blurb: "Hi! I'm Josephine. I'm a fourth year chemistry
+				major who's been in gold tier for two semesters now.
+				When I am not learning about chemistry or working on designs,
+				I like to travel, experiment with new recipes, people-watch in
+				coffee shops, and shop for succulents.",
+		headshot: './img/josephine/headshot.jpg',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			'./img/josephine/img0.png',
+			'./img/josephine/img1.png'
 		]
 	};
 
 	$scope.tiffany = {
 		name: 'Tiffany Kim',
-		blurb: 'I am Jason Mai. I do stuff',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		blurb: 'I am Tiffany. Drawing on illustrator. Creations are made.',
+		headshot: './img/tiffany/headshot.jpg',
 		imgs: [
-			'./img/tiffany/img0.jpg',
-			'./img/tiffany/img1.jpg',
-			'./img/tiffany/img2.jpg',
-			'./img/tiffany/img3.jpg'
+			'./img/tiffany/img0.png',
+			'./img/tiffany/img1.png',
+			'./img/tiffany/img2.png'
 		]
 	};
 
@@ -60,10 +57,8 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			'./img/felicia/img0.jpg',
+			'./img/felicia/img1.jpg'
 		]
 	};
 
@@ -84,10 +79,8 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'I am Jason Mai. I do stuff',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-			'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/'
+			'./img/facundo/img0.jpg',
+			'./img/facundo/img1.jpg'
 		]
 	};
 

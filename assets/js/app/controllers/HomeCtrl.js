@@ -9,12 +9,12 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
         },
         {
             name: 'Josephine Ung',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/josephine/headshot.jpg',
             link: 'josephine'
         },
         {
             name: 'Tiffany Kim',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/tiffany/headshot.jpg',
             link: 'tiffany'
         },
         {
