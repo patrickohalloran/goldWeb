@@ -29,7 +29,6 @@ app.run(['$rootScope',
             $rootScope.currentPage = toState.name;
 
             if (toState.data && toState.data.pageTitle) {
-                console.log("yoooo");
                 $rootScope.pageTitle = toState.data.pageTitle;
                 document.body.style.backgroundColor = toState.data.color;
             } else {
@@ -37,12 +36,6 @@ app.run(['$rootScope',
             }
 
             // Add functionality for successful state/page change here
-            // if (toState.name === 'home') {
-            //     console.log("yoooo");
-            //     document.body.style.backgroundColor = #EAEAEA;
-            // } else {
-            //     document.body.style.backgroundColor = #F6CA1B;
-            // }
         });
 
         //Scroll to top of page on page change
@@ -124,6 +117,24 @@ app.config(['$stateProvider',
                     pageTitle: 'Facundo Severi',
                     name: 'Facundo Severi',
                     color: '#F6CA1B'
+                }
+            })
+            .state('serena', {
+                url: '/serena',
+                templateUrl: './views/portfolio-page.html',
+                data: {
+                    pageTitle: 'Serena Chang',
+                    name: 'Serena Chang',
+                    color: '#F6CA1B'
+                }
+            })
+            .state('jasonCharisse', {
+                url: '/jasonCharisse',
+                templateUrl: './views/tier-leader-page.html',
+                data: {
+                    pageTitle: 'Jason and Charisse',
+                    name: 'Jason Mai and Charisse Celestial',
+                    color: '#EAEAEA'
                 }
             })
             .state('nathan', {

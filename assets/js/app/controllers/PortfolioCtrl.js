@@ -7,7 +7,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 
     $scope.angela = {
 		name: 'Angela Choi',
-		blurb: 'I am Jason Mai. I do stuff',
+		blurb: 'Something cool.',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
 			{
@@ -83,7 +83,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 
 	$scope.felicia = {
 		name: 'Felicia Fang',
-		blurb: 'I am Jason Mai. I do stuff',
+		blurb: 'Something cool.',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
 			{
@@ -93,6 +93,24 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 			{
 				url: './img/felicia/img1.jpg',
 				wide: true
+			}
+		]
+	};
+
+	$scope.serena = {
+		name: 'Serena Chang',
+		blurb: 'Serena is a second year studying Electrical Engineering and Computer Science.
+				Her days and nights consist of endless debugging, designing, and dancing in
+				sketchy parking structures.  Food is her one true love.',
+		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		imgs: [
+			{
+				url: './img/serena/img0.png',
+				wide: true
+			},
+			{
+				url: './img/serena/img1.png',
+				wide: false
 			}
 		]
 	};
@@ -121,7 +139,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 
 	$scope.facundo = {
 		name: 'Facundo Severi',
-		blurb: 'I am Jason Mai. I do stuff',
+		blurb: 'Something cool.',
 		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
 		imgs: [
 			{
@@ -156,6 +174,9 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 			break;
 		case 'facundo':
 			$scope.person = $scope.facundo;
+			break;
+		case 'serena':
+			$scope.person = $scope.serena;
 			break;
 		default:
 			console.log("That dude doesn't exist!");

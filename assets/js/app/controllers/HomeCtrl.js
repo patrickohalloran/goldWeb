@@ -38,14 +38,14 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
             link: 'facundo'
         },
         {
-            name: 'Charisse Celestial',
+            name: 'Serena Chang',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'charisse'
+            link: 'serena'
         },
         {
-            name: 'Jason Mai',
+            name: 'Jason Mai and Charisse Celestial',
             picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
-            link: 'jason'
+            link: 'jasonCharisse'
         }
     ];
 
