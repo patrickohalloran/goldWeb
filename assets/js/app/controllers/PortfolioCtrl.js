@@ -8,7 +8,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
     $scope.angela = {
 		name: 'Angela Choi',
 		blurb: 'Something cool.',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		headshot: './img/angela/headshot.jpg',
 		imgs: [
 			{
 				url: './img/angela/img0.jpg',
@@ -68,7 +68,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 				have taken two innod design decals in the past. I have a love for animal
 				conservation, desserts and documentaries, combine the three and I'll be
 				a very happy person!",
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		headshot: './img/yi/headshot.jpg',
 		imgs: [
 			{
 				url: './img/yi/img0.png',
@@ -84,7 +84,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 	$scope.felicia = {
 		name: 'Felicia Fang',
 		blurb: 'Something cool.',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		headshot: './img/felicia/headshot.jpg',
 		imgs: [
 			{
 				url: './img/felicia/img0.jpg',
@@ -102,7 +102,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'Serena is a second year studying Electrical Engineering and Computer Science.
 				Her days and nights consist of endless debugging, designing, and dancing in
 				sketchy parking structures.  Food is her one true love.',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		headshot: './img/serena/headshot.jpg',
 		imgs: [
 			{
 				url: './img/serena/img0.png',
@@ -120,7 +120,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 		blurb: 'Grown in the Midwest, transplanted to the Bay. My design
 				background comes from self-taught calligraphy with a focus
 				on gothic scripts, and a smattering of handlettering.',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		headshot: './img/nathan/headshot.jpg',
 		imgs: [
 			{
 				url: './img/nathan/img0.png',
@@ -140,7 +140,7 @@ app.controller('PortfolioCtrl', ['$scope', '$state', function($scope, $state) {
 	$scope.facundo = {
 		name: 'Facundo Severi',
 		blurb: 'Something cool.',
-		headshot: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+		headshot: './img/facundo/headshot.jpg',
 		imgs: [
 			{
 				url: './img/facundo/img0.jpg',

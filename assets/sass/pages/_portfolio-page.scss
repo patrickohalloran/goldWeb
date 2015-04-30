@@ -49,10 +49,10 @@ $Slim-Joe : Slim_Joe;
     .info-container {
         margin-top: 40px;
         .headshot img {
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: auto;
             @include horizontal-align();
-            border-radius: 50%;
+            border-radius: 5px;
         }
 
         .blurb {

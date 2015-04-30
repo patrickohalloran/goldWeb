@@ -4,12 +4,12 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
     $scope.people = [
         {
             name: 'Angela Choi',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/angela/headshot.jpg',
             link: 'angela'
         },
         {
             name: 'Josephine Ung',
-            picture: './img/josephine/headshot.jpg',
+            picture: './img/josephine/headshot.png',
             link: 'josephine'
         },
         {
@@ -19,32 +19,32 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
         },
         {
             name: 'Yi Jean Lim',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/yi/headshot.jpg',
             link: 'yi'
         },
         {
             name: 'Felicia Fang',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/felicia/headshot.jpg',
             link: 'felicia'
         },
         {
             name: 'Nathan Jin',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/nathan/headshot.jpg',
             link: 'nathan'
         },
         {
             name: 'Facundo Severi',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/facundo/headshot.jpg',
             link: 'facundo'
         },
         {
             name: 'Serena Chang',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/serena/headshot.jpg',
             link: 'serena'
         },
         {
             name: 'Jason Mai and Charisse Celestial',
-            picture: 'https://api.fnkr.net/testimg/350x200/0092BF/EAEAEA/',
+            picture: './img/jasonCharisse/headshot.png',
             link: 'jasonCharisse'
         }
     ];
