@@ -171,4 +171,37 @@ $Slim-Joe : Slim_Joe;
             }
         }
     }
+
+    .footer {
+        background: $blue;
+        height: 60px;
+        display: inline-block;
+        width: 100%;
+
+        .bottom-logo {
+            transition: 1s;
+            display: inline-block;
+            margin-left: 10px;
+            height: 100%;
+            img {
+                height: 45px;
+                @include vertical-align();
+                //transition: 1s;
+                //opacity: 1;
+            }
+
+            &:hover {
+                transition: 21;
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .slogan {
+            display: inline-block;
+            font-family: $BIG_JOHN;
+            color: $white;
+
+        }
+    }
 }
