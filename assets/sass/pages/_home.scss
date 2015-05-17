@@ -130,7 +130,6 @@ $Slim-Joe : Slim_Joe;
         .bounce-container {
             position: absolute;
             left: 50%;
-            margin-left: -15px;
             bottom: 10px;
             .bounce img{
                 width:50px;
@@ -138,7 +137,9 @@ $Slim-Joe : Slim_Joe;
                 and (min-width : 375px)
                 and (max-width : 667px) {
                     width: 30px;
+                    margin-left: -15px;
                 }
+                margin-left: -25px;
                 -webkit-animation: bounce 2s infinite;
             }
         }
