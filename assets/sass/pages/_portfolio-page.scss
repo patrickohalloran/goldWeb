@@ -28,6 +28,12 @@ $Slim-Joe : Slim_Joe;
 
     		img {
 				width: 100px;
+
+                @media only screen
+                and (min-width : 375px)
+                and (max-width : 667px) {
+                    width: 50px;
+                }
 	    	}
 
             &:hover {
@@ -43,16 +49,36 @@ $Slim-Joe : Slim_Joe;
 	        line-height: 128px;
 	        text-align: left;
 	        margin-top: 20px;
+
+            @media only screen
+            and (min-width : 375px)
+            and (max-width : 667px) {
+                font-size: 32px;
+                line-height: 64px;
+            }
     	}
     }
 
     .info-container {
         margin-top: 40px;
+
+        @media only screen
+        and (min-width : 375px)
+        and (max-width : 667px) {
+            margin-top: 20px;
+        }
+
         .headshot img {
-            width: 350px;
+            width: 400px;
             height: auto;
             @include horizontal-align();
             border-radius: 5px;
+
+            @media only screen
+            and (min-width : 375px)
+            and (max-width : 667px) {
+                width: 250px;
+            }
         }
 
         .blurb {
@@ -63,12 +89,27 @@ $Slim-Joe : Slim_Joe;
             font-size: 20px;
             width: 60%;
             @include horizontal-align();
+
+            @media only screen
+            and (min-width : 375px)
+            and (max-width : 667px) {
+                margin-bottom: 0px;
+            }
         }
     }
 
     .piece-container {
         width: 400px;
         height: 400px;
+        overflow: hidden;
+
+        @media only screen
+        and (min-width : 375px)
+        and (max-width : 667px) {
+            width: 300px;
+            height: 300px;
+        }
+
         @include horizontal-align();
         text-align: center;
         .piece img {

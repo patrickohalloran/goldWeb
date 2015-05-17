@@ -23,12 +23,17 @@ $Slim-Joe : Slim_Joe;
     	.logo {
             z-index: 900;
 			float: left;
-			margin-top: 5px;
+			margin-top: 20px;
 	       	margin-left: 20px;
             transition: 1s;
 
     		img {
 				width: 100px;
+                @media only screen
+                and (min-width : 375px)
+                and (max-width : 667px) {
+                    width: 50px;
+                }
 	    	}
 
             &:hover {
@@ -41,9 +46,16 @@ $Slim-Joe : Slim_Joe;
 	    	color: $white;
 	        font-family: $BIG_JOHN;
 	        font-size: 32px;
-	        line-height: 64px;
+	        line-height: 128px;
 	        text-align: left;
-	        margin-top: 40px;
+	        margin-top: 20px;
+
+            @media only screen
+            and (min-width : 375px)
+            and (max-width : 667px) {
+                font-size: 14px;
+                line-height: 64px;
+            }
     	}
     }
 
@@ -59,10 +71,22 @@ $Slim-Joe : Slim_Joe;
             img {
                 width: 500px;
                 height: auto;
+
+                @media only screen
+                and (min-width : 375px)
+                and (max-width : 667px) {
+                    width: 300px;
+                }
             }
 
             .jason-blurb {
                 margin-top: 10px;
+                @media only screen
+                and (min-width : 375px)
+                and (max-width : 667px) {
+                    width: 300px;
+                    @include horizontal-align();
+                }
             }
         }
 
@@ -72,10 +96,23 @@ $Slim-Joe : Slim_Joe;
             img {
                 width: 500px;
                 height: auto;
+
+                @media only screen
+                and (min-width : 375px)
+                and (max-width : 667px) {
+                    width: 300px;
+                }
             }
 
             .charisse-blurb {
                 margin-top: 10px;
+
+                @media only screen
+                and (min-width : 375px)
+                and (max-width : 667px) {
+                    width: 300px;
+                    @include horizontal-align();
+                }
             }
         }
     }
@@ -87,6 +124,13 @@ $Slim-Joe : Slim_Joe;
         color: $gold;
         font-family: $BIG_JOHN;
         margin-top: 20px;
+
+        @media only screen
+        and (min-width : 375px)
+        and (max-width : 667px) {
+            font-size: 48px;
+            line-height: 96px;
+        }
     }
 
     .team-photo {
@@ -95,6 +139,12 @@ $Slim-Joe : Slim_Joe;
         img {
             width: 600px;
             height: auto;
+
+            @media only screen
+            and (min-width : 375px)
+            and (max-width : 667px) {
+                width: 300px;
+            }
         }
     }
 }

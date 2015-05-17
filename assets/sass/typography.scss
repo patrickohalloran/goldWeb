@@ -1,31 +1,31 @@
 // Title Text Styles
 
 @mixin txt-title-xx-lg() {
-    @include font-title();
+    //@include font-title();
     @include font-size(96px);
     @include line-height(192px);
 }
 
 @mixin txt-title-x-lg() {
-    @include font-title();
-    @include font-size(32px);
-    @include line-height(64px);
+    //@include font-title();
+    @include font-size(54px);
+    @include line-height(108px);
 }
 
 @mixin txt-title-lg() {
-    @include font-title();
+    //@include font-title();
     @include font-size(24px);
     @include line-height(48px);
 }
 
 @mixin txt-title-md() {
-    @include font-title();
+    //@include font-title();
     @include font-size(20px);
     @include line-height(40px);
 }
 
 @mixin txt-title-sm() {
-    @include font-title();
+    //@include font-title();
     @include font-size(17px);
     @include line-height(34px);
 }
